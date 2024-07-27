@@ -56,57 +56,54 @@ class FacebookApp extends StatelessWidget {
         child: Icon(Icons.add),
       ),
       body:
-          Container(
-            color: Colors.blueGrey,
-         width: double.infinity,
-         height: 150,
+          Center(
+            child: Container(
 
-         child:
+              child: Stack(
 
 
-             Row(
-              children: [
-                Expanded(
-                  flex: 3,
-                  child: Container(
-                    margin: EdgeInsets.only(bottom: 20),
-                    child: Center(child: Text("Ghada",style: TextStyle(color:Colors.white),)),
-                    width:100,
-                    height: 50,
-                    decoration: BoxDecoration(borderRadius: BorderRadius.circular(25),
-                        color: Colors.orange),
+                children: [
+                Positioned(child:
+
+
+                  Container(
+                    color: Colors.teal,
+                    child: Center(child: Text("ghada",style: TextStyle(color: Colors.white),)),
+                    width:300,
+                    height:150,
                   ),
-                ),
-            Expanded(
-              flex: 3,
-              child:
-              Container(
-                  margin: EdgeInsets.only(bottom: 20),
-                  child: Center(child: Text("Ghada",style: TextStyle(color:Colors.white),)),
-                  width:100,
-                  height: 50,
-                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(25),
-                      color: Colors.orange),
-                ),
             ),
-            Expanded(
-              flex: 3,
-              child:
+
+                  Container(
+                    color: Colors.green,
+                    child: Center(child: Text("ghada",style: TextStyle(color: Colors.white),)),
+                    width: 200,
+                    height:120,
+                  ),
+
+
+
+
               Container(
-                  margin: EdgeInsets.only(bottom: 20),
-                  child: Center(child: Text("Ghada",style: TextStyle(color:Colors.white),)),
-                  width:100,
-                  height: 50,
-                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(25),
-                      color: Colors.orange),
-                ),
-            ),
-    ],
+
+                child: Center(child: Text("ghada",style: TextStyle(color: Colors.white),)),
+                color: Colors.orange,
+
+                width: 100,
+                height:100,
+              ),
+
+
+
+
+
+                ],
     ),
-          ),
-
-
-
+              width: 400,
+              height: 400,
+              color: Colors.blueGrey,
+              ),
+              ),
 
 
     );
